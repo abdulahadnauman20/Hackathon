@@ -1,0 +1,120 @@
+.personalization-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.personalization-container h3 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.personalization-message {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+}
+
+.personalization-loading {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+}
+
+.personalization-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.preference-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.preference-group label {
+  font-weight: 500;
+  color: #555;
+}
+
+.preference-select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.preference-select:focus {
+  outline: none;
+  border-color: #4f6fef;
+  box-shadow: 0 0 0 2px rgba(79, 111, 239, 0.25);
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.save-preferences-button {
+  padding: 10px 15px;
+  background-color: #4f6fef;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.save-preferences-button:hover {
+  background-color: #3a56e0;
+}
+
+.save-preferences-button:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+.save-success {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .personalization-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .checkbox-group {
+    gap: 5px;
+  }
+}

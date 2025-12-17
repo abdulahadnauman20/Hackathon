@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p .specify/memory)",
+      "Bash(mkdir -p .specify/templates)",
+      "Bash(find . -name \"*.md\" -path \"./.specify/*\" -exec grep -l \"\\[\" {} ;)",
+      "Bash(dir \"E:\\Abdul Ahad\\University\\2024-2025\\Courses\\Governor House Course\\Hackathon 1\\speci\\my-website\\.specify\\commands\")",
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(mkdir -p docs/module-1)",
+      "Bash(npx docusaurus start)",
+      "Bash(python -m uvicorn main:app --host 0.0.0.0 --port 8000)",
+      "Bash(pip install -r requirements.txt)",
+      "Bash(python -m pip install fastapi==0.115.0)",
+      "Bash(python -m pip install python-multipart==0.0.20)",
+      "Bash(python -m pip install python-dotenv==1.0.1)",
+      "Bash(python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(python -m pip install pydantic-settings)"
+    ]
+  }
+}
